@@ -58,7 +58,7 @@ function TextForm(props) {
       </div>
       <div className="container mt-3 ">
         <h2>Your Text Summary</h2>
-        <p>{text.split("").filter((element)=>{return element.length!==0}).length} Words and {text.length} Character </p>
+        <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} Character </p>
 
         <h3>Preview Your Text</h3>
         <p >{text.length === 0?("Nothing To Preview"):text}</p>
