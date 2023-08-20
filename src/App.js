@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
+import { toast } from 'react-hot-toast'
 
 export default function App() {
 
@@ -13,10 +14,12 @@ export default function App() {
     if(mode==="light"){
       setMode("dark")
       document.body.style.backgroundColor= "black"
+      toast.success("Dark Mode Enabled")
     }
     else{
       setMode("light")
       document.body.style.backgroundColor= "white"
+      toast.success("Light Mode Enabled")
     }
   }
 
