@@ -33,7 +33,7 @@ function TextForm(props) {
   }
 
   function clearHandler(){
-      setText(" ")
+      setText("")
       toast.error("clear the text")
   }
 
